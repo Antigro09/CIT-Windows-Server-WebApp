@@ -1,12 +1,20 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
+  const location = useLocation();
+  
+  const isActiveRoute = (path) => {
+    return location.pathname === path || 
+           (location.pathname === '/' && path === '/dashboard');
+  };
+  
   return (
-    <header className="bg-blue-600 text-white shadow-md">
+    <header className="bg-blue-800 text-white shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
           <svg 
-            className="h-8 w-8 mr-2" 
+            className="h-8 w-8 mr-2 text-white" 
             viewBox="0 0 24 24" 
             fill="none" 
             stroke="currentColor" 
@@ -20,18 +28,33 @@ const Header = () => {
             <line x1="3" y1="10" x2="21" y2="10"></line>
             <path d="M9 16l2 2 4-4"></path>
           </svg>
-          <h1 className="text-2xl font-bold">TaskMaster</h1>
+          <Link to="/" className="text-2xl font-bold text-white hover:text-white">TaskMaster</Link>
         </div>
         
         <div className="hidden md:flex space-x-4">
-          <a href="#" className="hover:underline">Dashboard</a>
-          <a href="#" className="hover:underline">Projects</a>
-          <a href="#" className="hover:underline">Reports</a>
+          <Link 
+            to="/dashboard" 
+            className={`text-white hover:text-white hover:underline px-2 py-1 rounded ${isActiveRoute('/dashboard') ? 'bg-blue-700' : ''}`}
+          >
+            Dashboard
+          </Link>
+          <Link 
+            to="/projects" 
+            className={`text-white hover:text-white hover:underline px-2 py-1 rounded ${isActiveRoute('/projects') ? 'bg-blue-700' : ''}`}
+          >
+            Projects
+          </Link>
+          <Link 
+            to="/reports" 
+            className={`text-white hover:text-white hover:underline px-2 py-1 rounded ${isActiveRoute('/reports') ? 'bg-blue-700' : ''}`}
+          >
+            Reports
+          </Link>
         </div>
         
         <div className="flex items-center">
           <button 
-            className="bg-white text-blue-600 px-4 py-2 rounded-md font-medium hover:bg-blue-50 transition duration-150"
+            className="bg-white text-blue-800 px-4 py-2 rounded-md font-medium hover:bg-blue-50 transition duration-150"
           >
             Sign In
           </button>

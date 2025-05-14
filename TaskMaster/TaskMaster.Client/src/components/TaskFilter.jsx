@@ -48,7 +48,7 @@ const TaskFilter = () => {
             id="searchTerm"
             value={filters.searchTerm || ''}
             onChange={handleSearchChange}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
             placeholder="Search tasks..."
           />
         </div>
@@ -61,7 +61,7 @@ const TaskFilter = () => {
             id="status"
             value={filters.status || 'all'}
             onChange={handleStatusChange}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
           >
             <option value="all">All Statuses</option>
             <option value={TaskStatus.TODO}>{TaskStatus.TODO}</option>
@@ -79,7 +79,7 @@ const TaskFilter = () => {
             id="priority"
             value={filters.priority || 'all'}
             onChange={handlePriorityChange}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
           >
             <option value="all">All Priorities</option>
             <option value={Priority.LOW}>{Priority.LOW}</option>
@@ -98,7 +98,7 @@ const TaskFilter = () => {
               id="sortBy"
               value={filters.sortBy}
               onChange={handleSortChange}
-              className="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
             >
               <option value="createdAt">Created Date</option>
               <option value="dueDate">Due Date</option>
@@ -126,7 +126,7 @@ const TaskFilter = () => {
 
         <button
           onClick={handleClearFilters}
-          className="w-full mt-4 py-2 px-4 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full mt-4 py-2 px-4 border border-gray-300 rounded-md text-sm font-medium text-gray-900 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           Clear Filters
         </button>

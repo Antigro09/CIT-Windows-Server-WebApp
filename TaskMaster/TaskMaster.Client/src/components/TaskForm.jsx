@@ -63,7 +63,7 @@ const TaskForm = () => {
             name="title"
             value={formData.title}
             onChange={handleChange}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
             placeholder="Enter task title"
             required
           />
@@ -79,7 +79,7 @@ const TaskForm = () => {
             value={formData.description}
             onChange={handleChange}
             rows="3"
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
             placeholder="Enter task description (optional)"
           ></textarea>
         </div>
@@ -93,7 +93,7 @@ const TaskForm = () => {
             name="priority"
             value={formData.priority}
             onChange={handleChange}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
           >
             <option value={Priority.LOW}>Low</option>
             <option value={Priority.MEDIUM}>Medium</option>
@@ -112,14 +112,14 @@ const TaskForm = () => {
             name="dueDate"
             value={formData.dueDate}
             onChange={handleChange}
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
           />
         </div>
         
         <button
           type="submit"
           disabled={submitting || !formData.title.trim()}
-          className={`w-full bg-blue-600 text-white py-2 px-4 rounded-md font-medium hover:bg-blue-700 transition duration-150 ${
+          className={`w-full bg-blue-600 text-black py-2 px-4 rounded-md font-medium hover:bg-blue-700 transition duration-150 ${
             submitting || !formData.title.trim() ? 'opacity-60 cursor-not-allowed' : ''
           }`}
         >
