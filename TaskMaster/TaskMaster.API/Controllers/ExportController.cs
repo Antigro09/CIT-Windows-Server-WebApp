@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.ComponentModel.DataAnnotations;
+using SystemThreadingTasks = System.Threading.Tasks; // Alias for system tasks
 using TaskMaster.API.Data;
 using TaskMaster.Core.Entities;
 
@@ -125,6 +127,14 @@ namespace TaskMaster.API.Controllers
                     })
                     .ToListAsync();
 
+                // Example:
+                // if (someTask.Status == TaskStatus.InProgress) // AMBIGUOUS
+                // Change to:
+                if (tasks.Any(t => t.Status == TaskMaster.Core.Entities.TaskStatus.InProgress.ToString())) // EXPLICIT
+                {
+                    // ...
+                }
+
                 // Return JSON file
                 return File(System.Text.Encoding.UTF8.GetBytes(System.Text.Json.JsonSerializer.Serialize(tasks)), 
                     "application/json", 
@@ -135,6 +145,20 @@ namespace TaskMaster.API.Controllers
                 _logger.LogError(ex, "Error exporting tasks to JSON");
                 return StatusCode(500, "An error occurred while exporting data");
             }
+        }
+
+        public IActionResult SomeAction()
+        {
+            // ...
+            var myDomainStatus = TaskStatus.Pending; // This will now correctly refer to TaskMaster.Core.Entities.TaskStatus
+            // If you needed the system one, you'd use:
+            // var systemTaskStatus = SystemThreadingTasks.TaskStatus.RanToCompletion;
+            // ...
+            if (someValue == TaskStatus.Completed) // This should now resolve to your domain's TaskStatus
+            {
+                // ...
+            }
+            return Ok();
         }
     }
 

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskMaster.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f9ba0b2fc276675265f201493e19e0c50bb12e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d954d0f3be8797a69ee019296f2ea7e091f76e04")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskMaster.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskMaster.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
