@@ -7,7 +7,7 @@ namespace TaskMaster.API.Models
         public int Id { get; set; }
         public string Title { get; set; } = string.Empty;
         public string? Description { get; set; }
-        public TaskStatus Status { get; set; }
+        public TaskMaster.Core.Entities.TaskItem Status { get; set; }
         public Priority Priority { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime? DueDate { get; set; }
@@ -28,18 +28,18 @@ namespace TaskMaster.API.Models
         public string Title { get; set; } = string.Empty;
         public string? Description { get; set; }
         public Priority Priority { get; set; }
-        public TaskStatus Status { get; set; }
+        public TaskMaster.Core.Entities.TaskItem Status { get; set; }
         public DateTime? DueDate { get; set; }
     }
 
     public class UpdateTaskStatusDto
     {
-        public TaskStatus Status { get; set; }
+        public TaskMaster.Core.Entities.TaskItem Status { get; set; }
     }
 
     public class TaskFilterDto
     {
-        public TaskStatus? Status { get; set; }
+        public TaskMaster.Core.Entities.TaskItem? Status { get; set; }
         public Priority? Priority { get; set; }
         public DateTime? DueDateStart { get; set; }
         public DateTime? DueDateEnd { get; set; }

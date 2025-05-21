@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using TaskMaster.Core.Entities;
+using TaskMaster.Infrastructure.Data; // Add this using
 
 namespace TaskMaster.API.Data
 {

@@ -1,7 +1,8 @@
-using Microsoft.EntityFrameworkCore;
-using TaskMaster.API.Data;
-using TaskMaster.API.Models;
-using TaskMaster.Core.Entities;
+using Microsoft.EntityFrameworkCore; // Keep for EntityState if used, or for general EF Core types
+using TaskMaster.Core.Entities;     // For TaskItem
+using TaskMaster.Infrastructure.Data; // For IAppDbContext
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace TaskMaster.Infrastructure.Repositories
 {
@@ -17,9 +18,9 @@ namespace TaskMaster.Infrastructure.Repositories
 
     public class TaskRepository : ITaskRepository
     {
-        private readonly AppDbContext _context;
+        private readonly IAppDbContext _context; // Changed to IAppDbContext
 
-        public TaskRepository(AppDbContext context)
+        public TaskRepository(IAppDbContext context) // Changed to IAppDbContext
         {
             _context = context;
         }
@@ -37,13 +38,17 @@ namespace TaskMaster.Infrastructure.Repositories
         public async Task<TaskItem> AddTaskAsync(TaskItem task)
         {
             await _context.Tasks.AddAsync(task);
-            await _context.SaveChangesAsync();
+            // Consider if SaveChangesAsync should be called here or explicitly by the service layer
+            // For now, matching your original logic:
+            await _context.SaveChangesAsync(); 
             return task;
         }
 
         public async Task UpdateTaskAsync(TaskItem task)
         {
-            _context.Entry(task).State = EntityState.Modified;
+            // _context.Entry(task).State = EntityState.Modified; // This is valid if task is detached
+            // If task is tracked, or for simpler updates:
+            _context.Tasks.Update(task);
             await _context.SaveChangesAsync();
         }
 
@@ -55,7 +60,8 @@ namespace TaskMaster.Infrastructure.Repositories
 
         public async Task<bool> SaveChangesAsync()
         {
-            return await _context.SaveChangesAsync() > 0;
+            // The SaveChangesAsync on IAppDbContext returns Task<int>
+            return await _context.SaveChangesAsync(default) > 0; 
         }
     }
 }

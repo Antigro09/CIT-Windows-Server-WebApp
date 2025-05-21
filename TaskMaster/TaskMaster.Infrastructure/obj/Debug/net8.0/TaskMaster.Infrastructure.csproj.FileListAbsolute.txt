@@ -1,0 +1,16 @@
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Infrastructure\obj\Debug\net8.0\TaskMaster.Infrastructure.csproj.AssemblyReference.cache
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Infrastructure\obj\Debug\net8.0\TaskMaster.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Infrastructure\obj\Debug\net8.0\TaskMaster.Infrastructure.AssemblyInfoInputs.cache
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Infrastructure\obj\Debug\net8.0\TaskMaster.Infrastructure.AssemblyInfo.cs
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Infrastructure\obj\Debug\net8.0\TaskMaster.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Infrastructure\obj\Debug\net8.0\TaskMaster.Infrastructure.sourcelink.json
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Infrastructure\bin\Debug\net8.0\TaskMaster.Infrastructure.deps.json
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Infrastructure\bin\Debug\net8.0\TaskMaster.Infrastructure.dll
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Infrastructure\bin\Debug\net8.0\TaskMaster.Infrastructure.pdb
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Infrastructure\bin\Debug\net8.0\TaskMaster.Core.dll
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Infrastructure\bin\Debug\net8.0\TaskMaster.Core.pdb
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Infrastructure\obj\Debug\net8.0\TaskMast.2BC2BFE3.Up2Date
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Infrastructure\obj\Debug\net8.0\TaskMaster.Infrastructure.dll
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Infrastructure\obj\Debug\net8.0\refint\TaskMaster.Infrastructure.dll
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Infrastructure\obj\Debug\net8.0\TaskMaster.Infrastructure.pdb
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Infrastructure\obj\Debug\net8.0\ref\TaskMaster.Infrastructure.dll
