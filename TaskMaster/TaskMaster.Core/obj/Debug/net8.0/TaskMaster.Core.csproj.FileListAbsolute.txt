@@ -1,0 +1,5 @@
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Core\obj\Debug\net8.0\TaskMaster.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Core\obj\Debug\net8.0\TaskMaster.Core.AssemblyInfoInputs.cache
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Core\obj\Debug\net8.0\TaskMaster.Core.AssemblyInfo.cs
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Core\obj\Debug\net8.0\TaskMaster.Core.csproj.CoreCompileInputs.cache
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.Core\obj\Debug\net8.0\TaskMaster.Core.sourcelink.json

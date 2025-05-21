@@ -1,0 +1,8 @@
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.API\obj\Debug\net8.0\TaskMaster.API.csproj.AssemblyReference.cache
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.API\obj\Debug\net8.0\TaskMaster.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.API\obj\Debug\net8.0\TaskMaster.API.AssemblyInfoInputs.cache
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.API\obj\Debug\net8.0\TaskMaster.API.AssemblyInfo.cs
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.API\obj\Debug\net8.0\TaskMaster.API.csproj.CoreCompileInputs.cache
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.API\obj\Debug\net8.0\TaskMaster.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.API\obj\Debug\net8.0\TaskMaster.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Projects\CIT-Windows-Server-WebApp\TaskMaster\TaskMaster.API\obj\Debug\net8.0\TaskMaster.API.sourcelink.json
