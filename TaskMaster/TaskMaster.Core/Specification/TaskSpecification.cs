@@ -29,7 +29,7 @@ namespace TaskMaster.Core.Specifications
         /// <param name="pageNumber">Page number (1-based)</param>
         /// <param name="pageSize">Page size</param>
         public TaskSpecification(
-            TaskStatus? status,
+            TaskMaster.Core.Entities.TaskStatus? status,
             Priority? priority,
             string? searchTerm,
             DateTime? dueDateStart,
@@ -55,7 +55,7 @@ namespace TaskMaster.Core.Specifications
         /// Build criteria expression for filtering tasks
         /// </summary>
         private static System.Linq.Expressions.Expression<Func<TaskItem, bool>> BuildCriteria(
-            TaskStatus? status,
+            TaskMaster.Core.Entities.TaskStatus? status,
             Priority? priority,
             string? searchTerm,
             DateTime? dueDateStart,
